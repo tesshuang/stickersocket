@@ -28,8 +28,8 @@ io.on("connection",function(socket){
     
     socket.on("dropsticker", function(data){
         console.log(data);
-        io.emit("dropdown", data);
-    })
+        // io.emit("dropdown", data);
+    });
     
     socket.on("mymove", function(data){
         socket.broadcast.emit("newmove", data);
